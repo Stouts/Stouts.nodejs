@@ -1,0 +1,10 @@
+---
+
+- name: Install Ansible dependencies
+  apt: pkg=python-pycurl
+
+- name: Add APT repository
+  apt_repository: repo={{nodejs_ppa}}
+
+- name: Install nodejs
+  apt: pkg=nodejs
