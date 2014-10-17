@@ -3,7 +3,7 @@ Stouts.nodejs
 
 [![Build Status](https://travis-ci.org/Stouts/Stouts.nodejs.png)](https://travis-ci.org/Stouts/Stouts.nodejs)
 
-Ansible role which manage nodejs and npm.
+Ansible role which manage nodejs and npm packages.
 
 #### Requirements
 
@@ -14,7 +14,7 @@ Only tested on ubuntu for now.
 ```yaml
 nodejs_enabled: yes                       # The role is enabled
 
-nodejs_ppa: ppa:chris-lea/node.js         # NodeJS PPA
+nodejs_repository: ppa:chris-lea/node.js  # NodeJS PPA
 nodejs_npm_modules: []                    # List modules which will be installed
 ```
 
