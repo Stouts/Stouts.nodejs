@@ -4,7 +4,7 @@
   apt: pkg=python-pycurl
 
 - name: Add APT repository
-  apt_repository: repo={{nodejs_ppa}}
+  apt_repository: repo={{nodejs_repository}}
 
 - name: Install nodejs
   apt: pkg=nodejs
