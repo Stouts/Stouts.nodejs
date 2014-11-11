@@ -2,8 +2,7 @@ Stouts.nodejs
 =============
 
 [![Build Status](http://img.shields.io/travis/Stouts/Stouts.nodejs.svg?style=flat-square)](https://travis-ci.org/Stouts/Stouts.nodejs)
-[![Galaxy](http://img.shields.io/badge/galaxy-Stouts.nodejs-blue.svg?style=flat-square)](https://galaxy.nodejs.com/list#/roles/983)
-[![Tag](http://img.shields.io/github/tag/Stouts/Stouts.nodejs.svg?style=flat-square)]()
+[![Galaxy](http://img.shields.io/badge/galaxy-Stouts.nodejs-blue.svg?style=flat-square)](https://galaxy.ansible.com/list#/roles/983)
 
 Ansible role which manage nodejs and npm packages.
 
