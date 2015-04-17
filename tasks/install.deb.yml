@@ -8,4 +8,5 @@
   when: nodejs_repository is defined
 
 - name: Install nodejs
-  apt: pkg=nodejs
+  apt:
+    pkg: nodejs={{nodejs_version}}*
