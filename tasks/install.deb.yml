@@ -8,4 +8,15 @@
   when: nodejs_repository is defined
 
 - name: Install nodejs
-  apt: pkg=nodejs
+  apt:
+    pkg: nodejs={{nodejs_version}}*
+
+# Latest packages doesn't have 'node' executable anymore
+# It were renamed to 'nodejs'. Add link to support old
+# cookbooks which use the legacy 'node' command.
+- stat: path=/usr/bin/node
+  register: node_bin
+
+- name: Add legacy node link
+  file: src=/usr/bin/nodejs dest=/usr/bin/node state=link
+  when: not node_bin.stat.exists
