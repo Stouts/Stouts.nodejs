@@ -5,7 +5,7 @@ nodejs_version: 0.10.25
 nodejs_install: pkg                       # Install nodejs from packages, sources or binary
                                           # (pkg|src|bin)
 
-nodejs_repository: ppa:chris-lea/node.js  # NodeJS PPA (Set empty for skip)
+nodejs_repository: ppa:chris-lea/node.js  # NodeJS PPA (Set False for skip)
 nodejs_npm_modules: []                    # List modules which will be installed
 
 nodejs_home: /usr/lib/nodejs              # The directory where nodejs will be installed
