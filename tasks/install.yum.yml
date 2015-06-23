@@ -1,5 +1,8 @@
 ---
 
 - name: Install nodejs
-  yum: name=nodejs-{{nodejs_version}}
+  yum: name=nodejs
+
+- name: Install npm
+  yum: name=npm
 
