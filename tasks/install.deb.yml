@@ -8,8 +8,7 @@
   when: nodejs_repository is defined
 
 - name: Install nodejs
-  apt: name={{item}}
-  with_items: ["nodejs={{nodejs_version}}*", npm]
+  apt: name=nodejs
 
 # Latest packages doesn't have 'node' executable anymore
 # It were renamed to 'nodejs'. Add link to support old
