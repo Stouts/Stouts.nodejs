@@ -5,7 +5,7 @@
 
 - name: Add APT repository
   apt_repository: repo={{nodejs_repository}}
-  when: nodejs_repository is defined
+  when: nodejs_repository != False
 
 - name: Install nodejs
   apt: name=nodejs
