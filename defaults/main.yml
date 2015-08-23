@@ -4,6 +4,7 @@ nodejs_enabled: yes                       # The role is enabled
 nodejs_version: 0.10.37
 nodejs_install: pkg                       # Install nodejs from packages, sources or binary
                                           # (pkg|src|bin)
+nodejs_packages: [nodejs]
 
 nodejs_repository: ppa:chris-lea/node.js  # NodeJS PPA (Set False for skip)
 nodejs_npm_modules: []                    # List modules which will be installed
