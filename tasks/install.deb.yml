@@ -13,6 +13,9 @@
 - name: Install nodejs
   apt: name=nodejs
 
+- name: Install npm
+  apt: name=npm
+
 # Latest packages doesn't have 'node' executable anymore
 # It were renamed to 'nodejs'. Add link to support old
 # cookbooks which use the legacy 'node' command.
