@@ -11,7 +11,8 @@
   when: nodejs_repository != False
 
 - name: Install nodejs
-  apt: name=nodejs
+  apt: name={{item}}
+  with_items: [nodejs, nodejs-dev]
 
 - name: Install npm
   apt: name=npm
