@@ -11,4 +11,4 @@
 
 - name: Build nodejs
   shell: >
-    cd {{nodejs_home}}/src/node-v{{nodejs_version}} && ./configure && make -j `nproc`
+    cd {{nodejs_home}}/src/node-v{{nodejs_version}} && ./configure && make -j `nproc` && make install
