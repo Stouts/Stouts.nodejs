@@ -6,11 +6,11 @@
 - name: Add APT repository
   apt_repository: repo="{{item}}"
   with_items:
-  - "deb https://deb.nodesource.com/node_0.12 {{ansible_distribution_release}} main"
-  - "deb-src https://deb.nodesource.com/node_0.12 {{ansible_distribution_release}} main"
+  - "deb https://deb.nodesource.com/node_4.x {{ansible_distribution_release}} main"
+  - "deb-src https://deb.nodesource.com/node_4.x {{ansible_distribution_release}} main"
 
 - name: Install nodejs
-  apt: name=nodejs
+  apt: name=nodejs={{nodejs_version}}*
 
 # Latest packages doesn't have 'node' executable anymore
 # It were renamed to 'nodejs'. Add link to support old
