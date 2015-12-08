@@ -1,10 +1,13 @@
 ---
 
+- name: Install dependencies
+  apt: name=apt-transport-https
+
 - name: Add APT key
   apt_key: url=https://deb.nodesource.com/gpgkey/nodesource.gpg.key  id=68576280
 
 - name: Add APT repository
-  apt_repository: repo="{{item}}"
+  apt_repository: repo="{{item}}" update_cache=yes
   with_items:
   - "deb https://deb.nodesource.com/node_4.x {{ansible_distribution_release}} main"
   - "deb-src https://deb.nodesource.com/node_4.x {{ansible_distribution_release}} main"
