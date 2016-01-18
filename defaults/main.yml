@@ -1,6 +1,6 @@
 ---
 
-node_major_version: 4.x               
+nodejs_major_version: 4.x               
 nodejs_enabled: yes                       # The role is enabled
 nodejs_version: 4.2.3
 nodejs_install: pkg                       # Install nodejs from packages, sources or binary
