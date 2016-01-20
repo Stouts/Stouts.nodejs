@@ -16,7 +16,7 @@
   apt: name=nodejs={{nodejs_version}}* state='present'
   when: nodejs_version != 'latest'
 
-- name: Install specific version of nodejs
+- name: Install latest version of nodejs
   apt: name=nodejs state='latest'
   when: nodejs_version == 'latest'
 
