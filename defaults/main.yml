@@ -1,8 +1,8 @@
 ---
 
-nodejs_major_version: 4.x               
 nodejs_enabled: yes                       # The role is enabled
-nodejs_version: latest
+nodejs_major_version: 4.x                 # This will determine the repo from nodejs.org used
+nodejs_version: latest                    
 nodejs_install: pkg                       # Install nodejs from packages, sources or binary
                                           # (pkg|src|bin)
 
