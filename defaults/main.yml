@@ -1,7 +1,7 @@
 ---
 
 nodejs_enabled: yes                       # The role is enabled
-nodejs_version: 4.2.3
+nodejs_version: 4.4.0
 nodejs_install: pkg                       # Install nodejs from packages, sources or binary
                                           # (pkg|src|bin)
 
