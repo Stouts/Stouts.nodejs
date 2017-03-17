@@ -21,7 +21,7 @@ docker info || exit 1
 
 assert () {
     echo "ASSERT: $1"
-    execute "$@" || ( echo ${2-'Test is failed'} && exit 1 )
+    execute "$@" || ( echo ${2-'Test failed'} && exit 1 )
     echo "SUCCESS"
 }
 
@@ -41,7 +41,7 @@ suite () {
     done
 
     echo
-    
+
 }
 
 

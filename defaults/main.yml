@@ -1,8 +1,8 @@
 ---
 
 nodejs_enabled: yes                       # The role is enabled
-nodejs_version: 5.11.1
-nodejs_major_version: 5.x                 # This will determine the repo from nodejs.org used
+nodejs_version: 6.9.2
+nodejs_major_version: 6.x                 # This will determine the repo from nodejs.org used
 nodejs_install: pkg                       # Install nodejs from packages, sources or binary
                                           # (pkg|src|bin)
 
