@@ -1,12 +1,12 @@
 ---
 
-- include: install.deb.yml
+- import_tasks: install.deb.yml
   when: ansible_pkg_mgr == 'apt' and nodejs_install == 'pkg'
 
-- include: install.yum.yml
+- import_tasks: install.yum.yml
   when: ansible_pkg_mgr == 'yum' and nodejs_install == 'pkg'
 
-- include: install.src.yml
+- import_tasks: install.src.yml
   when: nodejs_install == 'src'
 
 - name: Install NPM modules
